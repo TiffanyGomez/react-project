@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json()); // Parse JSON requests
 
 // MongoDB Connection
-const dbURI = process.env.MONGODB_URI || 'mongodb://localhost:27017/my_database';
+const dbURI = process.env.MONGODB_URI
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
