@@ -6,8 +6,8 @@ const Home = () => {
     <div className="bg-gray-50 min-h-screen">
       {/* Hero Section */}
       <section className="bg-blue-500 text-white py-20 text-center">
-        <h1 className="text-5xl font-bold">Welcome to Shoe Haven</h1>
-        <p className="mt-4 text-lg">Find the perfect shoes for every occasion</p>
+        <h1 className="text-5xl font-bold">Welcome to Steppy</h1>
+        <p className="mt-4 text-lg">👟 Where Each Step Becomes a New Adventure ! 👟</p>
         <button className="mt-6 bg-white text-blue-500 font-semibold py-2 px-6 rounded hover:bg-gray-100">
           Shop Now
         </button>
@@ -25,7 +25,7 @@ const Home = () => {
               className="bg-white p-4 shadow rounded hover:shadow-lg transition"
             >
               <img
-                src={`https://via.placeholder.com/150?text=Shoe+${index + 1}`}
+                src={`/images/Men/Sport/Basket/basketball${index + 1}.png`}
                 alt={`Shoe ${index + 1}`}
                 className="w-full h-40 object-cover rounded"
               />
