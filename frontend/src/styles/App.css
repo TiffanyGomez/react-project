@@ -7,7 +7,7 @@ body {
 }
 
 .App-header {
-  background-color: #008759; /* Deep green */
+  background-color: #083d77; /* Deep blue */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,5 +18,5 @@ body {
 }
 
 .App-link {
-  color: #ffc857; /* Button yellow for links */
+  color: #ebebd3; /* Button yellow for links */
 }

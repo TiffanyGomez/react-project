@@ -3,7 +3,7 @@
     bottom: 0; /* Aligns the footer at the bottom */
     left: 0;
     width: 100%; /* Ensures the footer spans the full width */
-    background-color: #008759; /* Deep green */
+    background-color: #083d77; /* Deep blue */
     color: #ffffff; /* White text for contrast */
     text-align: center;
     padding: 10px 0; /* Padding for space inside the footer */
@@ -18,7 +18,7 @@
   }
   
   .footer__links a {
-    color: #ffc857; /* Button yellow as link color */
+    color: #ebebd3; /* light Button as link color */
     text-decoration: none;
     font-size: 0.9rem;
   }

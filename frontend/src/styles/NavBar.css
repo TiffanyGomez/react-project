@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #008759; /* Deep green */
+    background-color: #083d77; /* Deep blue */
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -30,6 +30,6 @@
   }
   
   .navbar__menu li a:hover {
-    color: #ffc857; /* Button yellow for hover */
+    color: #ebebd3; /* Button yellow for hover */
   }
   
