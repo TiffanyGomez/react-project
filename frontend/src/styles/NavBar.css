@@ -1,0 +1,35 @@
+.navbar {
+    background-color: #008759; /* Deep green */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Aligns logo and menu */
+    align-items: center; /* Vertically centers content */
+  }
+  
+  .navbar__logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* White text for logo */
+    text-decoration: none;
+  }
+  
+  .navbar__menu {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Space between menu items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar__menu li a {
+    color: white; /* White text */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar__menu li a:hover {
+    color: #ffc857; /* Button yellow for hover */
+  }
+  

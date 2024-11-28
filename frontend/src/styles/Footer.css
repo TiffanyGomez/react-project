@@ -1,0 +1,29 @@
+.footer {
+    position: fixed; /* Fixes the footer to the viewport */
+    bottom: 0; /* Aligns the footer at the bottom */
+    left: 0;
+    width: 100%; /* Ensures the footer spans the full width */
+    background-color: #008759; /* Deep green */
+    color: #ffffff; /* White text for contrast */
+    text-align: center;
+    padding: 10px 0; /* Padding for space inside the footer */
+    z-index: 1000; /* Keeps the footer above other elements */
+  }
+  
+  .footer__links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer__links a {
+    color: #ffc857; /* Button yellow as link color */
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  
+  .footer__links a:hover {
+    color: #f9a602; /* Hover yellow */
+  }
+  

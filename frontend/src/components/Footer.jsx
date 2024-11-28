@@ -1,18 +1,20 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
- 
-function Footer() {
+import React from "react";
+import "../styles//Footer.css";
+
+const Footer = () => {
   return (
-    <nav>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/contact">Contact</Link></li>
-      </ul>
-    </nav>
+    <footer className="footer">
+      <div className="footer__content">
+        <p>&copy; {new Date().getFullYear()} ShoeStore. All rights reserved.</p>
+        <div className="footer__links">
+          <a href="/about">About Us</a>
+          <a href="/contact">Contact</a>
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of Service</a>
+        </div>
+      </div>
+    </footer>
   );
-}
- 
+};
+
 export default Footer;
- 
- 
