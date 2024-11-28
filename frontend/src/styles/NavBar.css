@@ -1,35 +1,95 @@
+/* NavBar Styling */
 .navbar {
-    background-color: #008759; /* Deep green */
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; /* Aligns logo and menu */
-    align-items: center; /* Vertically centers content */
-  }
-  
-  .navbar__logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: white; /* White text for logo */
-    text-decoration: none;
-  }
-  
-  .navbar__menu {
-    display: flex;
-    list-style: none;
-    gap: 20px; /* Space between menu items */
-    margin: 0;
-    padding: 0;
-  }
-  
-  .navbar__menu li a {
-    color: white; /* White text */
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .navbar__menu li a:hover {
-    color: #ffc857; /* Button yellow for hover */
-  }
-  
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #e5e7eb;
+  z-index: 10;
+  padding: 0.75rem 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Brand Logo */
+.nav-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3b82f6;
+}
+
+/* Categories List */
+.categories-list {
+  display: flex;
+  gap: 2rem; /* Space between categories */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.category-item {
+  position: relative;
+  font-size: 1rem; /* Tailwind's text-base */
+  color: #6b7280;
+  cursor: pointer;
+}
+
+.category-item span {
+  padding: 0.5rem 0;
+  transition: color 0.3s;
+}
+
+.category-item:hover span {
+  color: #3b82f6; /* Accent color */
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: absolute;
+  top: 100%; /* Aligns below the category */
+  left: 0;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+  border-radius: 0.375rem;
+  z-index: 50;
+  width: 150px;
+  padding: 0.5rem 0;
+}
+
+.dropdown a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  color: #6b7280;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown a:hover {
+  background-color: #f9fafb;
+  color: #3b82f6;
+}
+
+/* Account Menu Hamburger */
+.hamburger-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  width: 25px;
+  height: 3px;
+  background-color: #6b7280;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+}
+
+.hamburger-btn:hover .hamburger {
+  background-color: #3b82f6;
+}

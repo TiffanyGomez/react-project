@@ -1,37 +1,20 @@
+/* Minimalist Header */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #008759; /* Deep green */
-    color: white; /* White text for readability */
-  }
-  
-  .header__logo a {
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .header__search input {
-    padding: 5px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 5px;
-  }
-  
-  .header__search button {
-    padding: 5px 10px;
-    background-color: #ffc857; /* Button yellow */
-    color: white; /* White text */
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .header__search button:hover {
-    background-color: #f9a602; /* Button hover */
-  }
-  
+  background-color: #f9fafb; /* Light gray */
+  text-align: center;
+  padding: 4rem 1rem; /* Create spacing to avoid overlap with navbar */
+  border-bottom: 1px solid #e5e7eb; /* Subtle border */
+}
+
+.header h1 {
+  font-size: 2.25rem; /* Tailwind's text-4xl */
+  font-weight: bold;
+  color: #111827; /* Dark gray text */
+  margin: 0 0 1rem;
+}
+
+.header p {
+  font-size: 1.125rem; /* Tailwind's text-lg */
+  color: #6b7280; /* Secondary text */
+  margin: 0;
+}

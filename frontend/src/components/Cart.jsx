@@ -1,57 +1,38 @@
-import React, { useState } from "react";
-import "../styles/Cart.css";
+import React from "react";
+import '../styles/Cart.css';
 
 const Cart = () => {
-  const [cartItems, setCartItems] = useState([
-    { id: 1, name: "Running Shoes", price: 49.99, quantity: 1 },
-    { id: 2, name: "Basketball Shoes", price: 89.99, quantity: 2 },
-  ]);
+  const cartItems = [
+    { id: 1, name: "Shoe A", price: 49.99, quantity: 2 },
+    { id: 2, name: "Shoe B", price: 69.99, quantity: 1 },
+  ];
 
-  const updateQuantity = (id, quantity) => {
-    setCartItems(
-      cartItems.map((item) =>
-        item.id === id ? { ...item, quantity: quantity } : item
-      )
-    );
-  };
-
-  const removeItem = (id) => {
-    setCartItems(cartItems.filter((item) => item.id !== id));
-  };
-
-  const calculateTotal = () => {
-    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
-  };
+  const total = cartItems.reduce(
+    (sum, item) => sum + item.price * item.quantity,
+    0
+  );
 
   return (
-    <div className="cart">
-      <h2>Your Shopping Cart</h2>
-      {cartItems.length === 0 ? (
-        <p>Your cart is empty.</p>
-      ) : (
-        <div className="cart__items">
-          {cartItems.map((item) => (
-            <div key={item.id} className="cart__item">
-              <h4>{item.name}</h4>
-              <p>${item.price}</p>
-              <div className="cart__item-controls">
-                <button onClick={() => updateQuantity(item.id, item.quantity - 1)} disabled={item.quantity <= 1}>-</button>
-                <span>{item.quantity}</span>
-                <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>+</button>
-              </div>
-              <button onClick={() => removeItem(item.id)} className="remove">
-                Remove
-              </button>
+    <div className="cart-container">
+      <h1 className="cart-title">Your Cart</h1>
+      <div className="cart-items">
+        {cartItems.map((item) => (
+          <div key={item.id} className="cart-item">
+            <div>
+              <h2 className="item-name">{item.name}</h2>
+              <p className="item-quantity">Quantity: {item.quantity}</p>
             </div>
-          ))}
+            <p className="item-price">
+              ${(item.price * item.quantity).toFixed(2)}
+            </p>
+          </div>
+        ))}
+        <div className="cart-total-container">
+          <h2 className="cart-total-label">Total</h2>
+          <p className="cart-total">${total.toFixed(2)}</p>
         </div>
-      )}
-      {cartItems.length > 0 && (
-        <div className="cart__summary">
-          <h3>Total: ${calculateTotal()}</h3>
-          <button className="checkout">Proceed to Checkout</button>
-        </div>
-      )}
+        <button className="checkout-btn">Proceed to Checkout</button>
+      </div>
     </div>
   );
 };

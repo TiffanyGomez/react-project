@@ -1,29 +1,40 @@
+/* Footer Styling */
+/* Footer Styling */
 .footer {
-    position: fixed; /* Fixes the footer to the viewport */
-    bottom: 0; /* Aligns the footer at the bottom */
-    left: 0;
-    width: 100%; /* Ensures the footer spans the full width */
-    background-color: #008759; /* Deep green */
-    color: #ffffff; /* White text for contrast */
-    text-align: center;
-    padding: 10px 0; /* Padding for space inside the footer */
-    z-index: 1000; /* Keeps the footer above other elements */
-  }
-  
-  .footer__links {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .footer__links a {
-    color: #ffc857; /* Button yellow as link color */
-    text-decoration: none;
-    font-size: 0.9rem;
-  }
-  
-  .footer__links a:hover {
-    color: #f9a602; /* Hover yellow */
-  }
-  
+  background-color: #f9fafb; /* Light gray */
+  color: #6b7280; /* Secondary text */
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 1px solid #e5e7eb; /* Subtle border */
+  font-size: 0.875rem; /* Tailwind's text-sm */
+  margin-top: auto; /* Push footer to the bottom */
+  width: 100%; /* Ensure footer spans full width */
+}
+
+/* Links inside the footer */
+.footer a {
+  margin: 0 0.5rem;
+  color: #3b82f6; /* Accent color */
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #2563eb; /* Darker accent */
+}
+
+/* Ensure body and root elements support flex layout */
+html, body {
+  height: 100%; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Ensure the root container fills the screen */
+}
+
+.page-content {
+  flex: 1; /* Allow this to grow and push the footer down */
+}
