@@ -17,6 +17,25 @@ const NAV_MENU = [
   },
 ];
 
+const CAT_MENU = [
+  {
+    name: "Men",
+    icon: "👨‍🦰", // Replace with your icon
+  },
+  {
+    name: "Women",
+    icon: "🫦", // Replace with your icon
+  },
+  {
+    name: "Children",
+    icon: "👶", // Replace with your icon
+  },
+  {
+    name: "Accessories",
+    icon: "👜", // Replace with your icon
+  },
+];
+
 const NavItem = ({ children, href }) => (
   <li className="nav-item">
     <a href={href || "#"} target={href ? "_blank" : "_self"}>
@@ -60,6 +79,16 @@ const Header = () => {
             </NavItem>
           ))}
         </ul>
+
+        <ul className="desktop-cat">
+          {CAT_MENU.map(({ name, icon, href }) => (
+            <NavItem key={name} href={href}>
+              <span className="icon">{icon}</span>
+              {name}
+            </NavItem>
+          ))}
+        </ul>
+
 
         {/* Mobile Menu Button */}
         <button

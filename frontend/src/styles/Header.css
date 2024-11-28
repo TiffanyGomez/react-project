@@ -17,7 +17,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background to show the blur */
-  position: fixed;
+  position: relative;
   top: 0;
   z-index: 100; /* Ensure the header stays on top of other elements */
   backdrop-filter: blur(10px); /* Apply the blur effect to the background */
@@ -40,6 +40,12 @@ body {
 
 /* Desktop Navigation */
 .desktop-nav {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.desktop-cat {
   display: flex;
   gap: 20px;
   list-style-type: none;
