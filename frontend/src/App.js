@@ -12,10 +12,10 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <Router>
-      <div id="root"> {/* Root container for sticky footer */}
+      <div id="root"> {}
         <Header />
         <NavBar />
-        <div className="page-content"> {/* Main content area */}
+        <div className="page-content"> {}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

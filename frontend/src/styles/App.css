@@ -1,22 +1,22 @@
 body {
-  background-color: #FDE8CD; /* Light neutral for backgrounds */
-  color: #333333; /* Dark grey for readable text */
+  background-color: #FDE8CD;
+  color: #333333;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
 
 .App-header {
-  background-color: #FDE8CD; /* Deep brown */
+  background-color: #FDE8CD;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black; /* black text for contrast */
+  color: black;
 }
 
 .App-link {
-  color: #00917C; /* Button yellow for links */
+  color: #00917C;
 }

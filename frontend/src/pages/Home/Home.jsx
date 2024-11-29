@@ -5,14 +5,12 @@ import '../../styles/Home.css';
 const Home = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      {/* Hero Section */}
       <section className="hero">
         <h1>Welcome to Steppy</h1>
         <p>👟 Where Each Step Becomes a New Adventure! 👟</p>
         <button>Shop Now</button>
       </section>
 
-      {/* Featured Products */}
       <section className="py-12 px-4">
         <h2 className="text-3xl font-semibold text-center text-gray-800">
           Featured Products

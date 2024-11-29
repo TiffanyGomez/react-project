@@ -1,40 +1,36 @@
-/* Footer Styling */
-/* Footer Styling */
 .footer {
-  background-color: #f9fafb; /* Light gray */
-  color: #6b7280; /* Secondary text */
+  background-color: #f9fafb;
+  color: #6b7280; 
   text-align: center;
   padding: 1rem 0;
-  border-top: 1px solid #e5e7eb; /* Subtle border */
-  font-size: 0.875rem; /* Tailwind's text-sm */
-  margin-top: auto; /* Push footer to the bottom */
-  width: 100%; /* Ensure footer spans full width */
+  border-top: 1px solid #e5e7eb; 
+  font-size: 0.875rem; 
+  margin-top: auto; 
+  width: 100%; 
 }
 
-/* Links inside the footer */
 .footer a {
   margin: 0 0.5rem;
-  color: #3b82f6; /* Accent color */
+  color: #3b82f6; 
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer a:hover {
-  color: #2563eb; /* Darker accent */
+  color: #2563eb; 
 }
 
-/* Ensure body and root elements support flex layout */
 html, body {
-  height: 100%; /* Full viewport height */
-  margin: 0; /* Remove default margin */
+  height: 100%; 
+  margin: 0; 
 }
 
 #root {
   display: flex;
   flex-direction: column;
-  min-height: 100%; /* Ensure the root container fills the screen */
+  min-height: 100%; 
 }
 
 .page-content {
-  flex: 1; /* Allow this to grow and push the footer down */
+  flex: 1; 
 }
