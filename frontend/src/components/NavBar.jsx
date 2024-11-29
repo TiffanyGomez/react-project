@@ -58,12 +58,12 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="container flex justify-between items-center">
-        {/* Brand Logo */}
+        {}
         <a href="/" className="nav-brand">
           Shoe Haven
         </a>
  
-        {/* Categories List */}
+        {}
         <ul className="categories-list">
           {categories.map((category) => (
             <li
@@ -86,7 +86,7 @@ const NavBar = () => {
           ))}
         </ul>
  
-        {/* Account Menu Hamburger */}
+        {}
         <div className="relative hamburger-container">
           <button className="hamburger-btn" onClick={toggleAccountMenu} aria-label="Account Menu">
             <div className="hamburger"></div>
