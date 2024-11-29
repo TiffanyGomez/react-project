@@ -6,7 +6,7 @@
 }
 
 .hero h1 {
-  font-size: 2.5rem; 
+  font-size: 2.5rem;
   font-weight: bold;
 }
 
@@ -21,7 +21,7 @@
   background-color: white;
   color: #291711; 
   font-weight: bold;
-  border-radius: 0.375rem; 
+  border-radius: 0.375rem;
   transition: background-color 0.3s;
 }
 
@@ -31,23 +31,22 @@
 }
 
 
-
 .product-card {
   background: white;
   padding: 1rem;
   border-radius: 0.5rem; 
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .product-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .product-card img {
-  border-radius: 0.375rem; 
-  height: 10rem; 
+  border-radius: 0.375rem;
+  height: 10rem;
   width: 100%; 
   object-fit: cover; 
 }
@@ -72,11 +71,11 @@
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   text-align: left;
-  font-size: 0.875rem; 
+  font-size: 0.875rem;
 }
 
 .testimonial p {
-  color: #6b7280; 
+  color: #6b7280;
   margin-bottom: 1rem;
 }
 
@@ -131,8 +130,78 @@
 }
 
 .newsletter button:hover {
-  background-color: #f3f4f6; 
+  background-color: #f3f4f6;
+}
+
+.exemple {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease, border 0.3s ease;
+}
+
+.exemple:hover {
+  transform: translateY(-10px); 
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.08); 
+  background: rgba(255, 255, 255, 1); 
+  border: 3px solid #291711; 
 }
 
 
+.product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
 
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  z-index: 3;
+  transition: color 0.3s ease;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #666;
+  z-index: 3;
+  transition: color 0.3s ease;
+}
+
+.product-button {
+  background-color: #291711;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+  z-index: 3;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+
+ 
+}
+
+.product-button:hover {
+  background-color: #008080;
+  transform: scale(1.1);
+}
+
+.product-image:hover  {
+  transform: scale(1.1);
+}
