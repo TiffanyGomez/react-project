@@ -1,138 +1,143 @@
 /* Hero Section */
 .hero {
-    background: linear-gradient(to right, #2563eb, #3b82f6); /* Tailwind's blue gradient */
-    color: white;
-    padding: 4rem 1rem;
-    text-align: center;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem; /* Tailwind's text-5xl */
-    font-weight: bold;
-  }
-  
-  .hero p {
-    margin-top: 1rem;
-    font-size: 1.25rem; /* Tailwind's text-lg */
-  }
-  
-  .hero button {
-    margin-top: 1.5rem;
-    padding: 0.5rem 1rem;
-    background-color: white;
-    color: #2563eb; /* Tailwind's blue-500 */
-    font-weight: bold;
-    border-radius: 0.375rem; /* Tailwind's rounded */
-    transition: background-color 0.3s;
-  }
-  
-  .hero button:hover {
-    background-color: #f3f4f6; /* Tailwind's gray-100 */
-  }
-  
-  /* Product Cards */
-  .product-card {
-    background: white;
-    padding: 1rem;
-    border-radius: 0.5rem; /* Tailwind's rounded-lg */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-md */
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .product-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
-  }
-  
-  .product-card img {
-    border-radius: 0.375rem; /* Tailwind's rounded */
-    height: 10rem; /* Fixed height for uniformity */
-    width: 100%; /* Full width of the container */
-    object-fit: cover; /* Ensures proper image scaling */
-  }
-  
-  /* Category Tiles */
-  .category-tile {
-    background: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .category-tile:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-  }
-  
-  /* Testimonials */
-  .testimonial {
-    background: white;
-    padding: 1rem;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    font-size: 0.875rem; /* Tailwind's text-sm */
-  }
-  
-  .testimonial p {
-    color: #6b7280; /* Tailwind's gray-600 */
-    margin-bottom: 1rem;
-  }
-  
-  .testimonial h3 {
-    font-size: 1rem; /* Tailwind's text-base */
-    font-weight: bold;
-    color: #111827; /* Tailwind's gray-800 */
-  }
-  
-  /* Newsletter Signup */
-  .newsletter {
-    background-color: #2563eb; /* Tailwind's blue-500 */
-    color: white;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-  
-  .newsletter h2 {
-    font-size: 1.75rem; /* Tailwind's text-3xl */
-    font-weight: bold;
-  }
-  
-  .newsletter p {
-    margin-top: 0.5rem;
-    font-size: 1rem; /* Tailwind's text-base */
-  }
-  
-  .newsletter form {
-    margin-top: 1.5rem;
-    display: flex;
-    justify-content: center;
-    gap: 0.5rem;
-  }
-  
-  .newsletter input {
-    padding: 0.5rem 1rem;
-    border-radius: 0.375rem 0 0 0.375rem; /* Rounded left corners */
-    border: none;
-    outline: none;
-    color: #111827; /* Tailwind's gray-800 */
-    width: 250px;
-  }
-  
-  .newsletter button {
-    padding: 0.5rem 1rem;
-    background-color: white;
-    color: #2563eb;
-    border-radius: 0 0.375rem 0.375rem 0; /* Rounded right corners */
-    font-weight: bold;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .newsletter button:hover {
-    background-color: #f3f4f6; /* Tailwind's gray-100 */
-  }
-  
+  background: linear-gradient(to right, #008080, #00A3A3); 
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem; /* Tailwind's text-5xl */
+  font-weight: bold;
+}
+
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.25rem; /* Tailwind's text-lg */
+}
+
+.hero button {
+  margin-top: 1.5rem;
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #291711; /* Tailwind's blue-500 */
+  font-weight: bold;
+  border-radius: 0.375rem; /* Tailwind's rounded */
+  transition: background-color 0.3s;
+}
+
+.hero button:hover {
+  background-color: #291711; /* Tailwind's gray-100 */
+  color: white;
+}
+
+
+
+/* Product Cards */
+.product-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem; /* Tailwind's rounded-lg */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind's shadow-md */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow */
+}
+
+.product-card img {
+  border-radius: 0.375rem; /* Tailwind's rounded */
+  height: 10rem; /* Fixed height for uniformity */
+  width: 100%; /* Full width of the container */
+  object-fit: cover; /* Ensures proper image scaling */
+}
+
+/* Category Tiles */
+.category-tile {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Testimonials */
+.testimonial {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  font-size: 0.875rem; /* Tailwind's text-sm */
+}
+
+.testimonial p {
+  color: #6b7280; /* Tailwind's gray-600 */
+  margin-bottom: 1rem;
+}
+
+.testimonial h3 {
+  font-size: 1rem; /* Tailwind's text-base */
+  font-weight: bold;
+  color: #111827; /* Tailwind's gray-800 */
+}
+
+/* Newsletter Signup */
+.newsletter {
+  background-color: #008080; /* Tailwind's blue-500 */
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.newsletter h2 {
+  font-size: 1.75rem; /* Tailwind's text-3xl */
+  font-weight: bold;
+}
+
+.newsletter p {
+  margin-top: 0.5rem;
+  font-size: 1rem; /* Tailwind's text-base */
+}
+
+.newsletter form {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.newsletter input {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem 0 0 0.375rem; /* Rounded left corners */
+  border: none;
+  outline: none;
+  color: #111827; /* Tailwind's gray-800 */
+  width: 250px;
+}
+
+.newsletter button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #291711;
+  border-radius: 0 0.375rem 0.375rem 0; /* Rounded right corners */
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+  background-color: #f3f4f6; /* Tailwind's gray-100 */
+}
+
+
+

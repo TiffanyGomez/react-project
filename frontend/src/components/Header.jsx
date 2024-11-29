@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 import '../styles/Header.css';
 
 const Header = () => {
@@ -24,8 +25,6 @@ const Header = () => {
   return (
     <header className="header">
       <div className="container">
-        <h1>Welcome to Shoe Haven</h1>
-        <p>Find the perfect shoes for every occasion!</p>
       </div>
     </header>
   );

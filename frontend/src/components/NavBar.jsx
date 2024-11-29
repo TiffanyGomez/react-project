@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import "../styles/NavBar.css";
-
+ 
 const NavBar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
   const [accountMenuOpen, setAccountMenuOpen] = useState(false);
-
+ 
   const handleMouseEnter = (menu) => setHoveredMenu(menu);
   const handleMouseLeave = () => setHoveredMenu(null);
   const toggleAccountMenu = () => setAccountMenuOpen(!accountMenuOpen);
-
+ 
   const categories = [
     {
       name: "Men",
@@ -54,7 +54,7 @@ const NavBar = () => {
       subCategories: ["Laces", "Cleaners", "Soles", "Shoehorn", "Socks", "Shoe Bags"],
     },
   ];
-
+ 
   return (
     <nav className="navbar">
       <div className="container flex justify-between items-center">
@@ -62,7 +62,7 @@ const NavBar = () => {
         <a href="/" className="nav-brand">
           Shoe Haven
         </a>
-
+ 
         {/* Categories List */}
         <ul className="categories-list">
           {categories.map((category) => (
@@ -85,7 +85,7 @@ const NavBar = () => {
             </li>
           ))}
         </ul>
-
+ 
         {/* Account Menu Hamburger */}
         <div className="relative hamburger-container">
           <button className="hamburger-btn" onClick={toggleAccountMenu} aria-label="Account Menu">
@@ -114,5 +114,5 @@ const NavBar = () => {
     </nav>
   );
 };
-
+ 
 export default NavBar;
