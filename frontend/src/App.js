@@ -8,19 +8,22 @@ import About from "./pages/Other/About";
 import Contact from "./pages/Other/Contact";
 import Cart from "./components/Cart";
 import Footer from "./components/Footer";
+import Products from "./pages/product/Products";
 
 function App() {
   return (
     <Router>
-      <div id="root"> {}
+      <div id="root">
         <Header />
         <NavBar />
-        <div className="page-content"> {}
+        <div className="page-content">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
+            {}
+            <Route path="/products/:category/:subcategory" element={<Products />} />
           </Routes>
         </div>
         <Footer />

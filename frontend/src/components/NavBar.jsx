@@ -19,9 +19,6 @@ const NavBar = () => {
         "Boots",
         "Athletic Shoes",
         "Sandals & Slippers",
-        "Specialty Shoes",
-        "Outdoor Shoes",
-        "Lifestyle Shoes",
       ],
     },
     {
@@ -30,11 +27,7 @@ const NavBar = () => {
         "Casual Shoes",
         "Formal Shoes",
         "Boots",
-        "Athletic Shoes",
-        "Sandals",
-        "Specialty Shoes",
-        "Lifestyle Shoes",
-        "Outdoor Shoes",
+        "Sports Shoes",
       ],
     },
     {
@@ -43,11 +36,6 @@ const NavBar = () => {
         "Casual Shoes",
         "Sports Shoes",
         "Boots",
-        "Sandals",
-        "Dress Shoes",
-        "Outdoor Shoes",
-        "Comfort Shoes",
-        "Seasonal Shoes",
       ],
     },
     {
@@ -75,9 +63,12 @@ const NavBar = () => {
               {hoveredMenu === category.name && (
                 <div className="dropdown">
                   {category.subCategories.map((sub, index) => (
-                    <a key={index} href={`/category/${sub.toLowerCase().replace(/\s/g, "-")}`}>
+                    <Link
+                      key={index}
+                      to={`/products/${category.name.toLowerCase()}/${sub.toLowerCase().replace(/\s/g, "-")}`}
+                    >
                       {sub}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               )}
@@ -86,13 +77,11 @@ const NavBar = () => {
         </ul>
 
         <div className="flex items-center gap-4">
-          {}
           <Link to="/cart" className="cart-btn" aria-label="Cart">
             🛒
-            <span className="cart-count">2</span> {}
+            <span className="cart-count">2</span>
           </Link>
 
-          {}
           <div className="relative hamburger-container">
             <button className="hamburger-btn" onClick={toggleAccountMenu} aria-label="Account Menu">
               <div className="hamburger"></div>

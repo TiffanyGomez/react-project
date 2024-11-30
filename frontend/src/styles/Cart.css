@@ -35,7 +35,7 @@
 }
 
 /* Reuse Home Styles for Images */
-.product-image {
+.product-image-cart {
   width: 100px;
   height: 100px;
   object-fit: contain;
