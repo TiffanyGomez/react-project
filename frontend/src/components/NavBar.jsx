@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../styles/NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [hoveredMenu, setHoveredMenu] = useState(null);
@@ -84,28 +85,37 @@ const NavBar = () => {
           ))}
         </ul>
 
-        <div className="relative hamburger-container">
-          <button className="hamburger-btn" onClick={toggleAccountMenu} aria-label="Account Menu">
-            <div className="hamburger"></div>
-            <div className="hamburger"></div>
-            <div className="hamburger"></div>
-          </button>
-          {accountMenuOpen && (
-            <div className="dropdown account-dropdown">
-              <a href="/profile" className="dropdown-item">
-                Profile
-              </a>
-              <a href="/orders" className="dropdown-item">
-                Orders
-              </a>
-              <a href="/settings" className="dropdown-item">
-                Settings
-              </a>
-              <a href="/logout" className="dropdown-item">
-                Logout
-              </a>
-            </div>
-          )}
+        <div className="flex items-center gap-4">
+          {}
+          <Link to="/cart" className="cart-btn" aria-label="Cart">
+            🛒
+            <span className="cart-count">2</span> {}
+          </Link>
+
+          {}
+          <div className="relative hamburger-container">
+            <button className="hamburger-btn" onClick={toggleAccountMenu} aria-label="Account Menu">
+              <div className="hamburger"></div>
+              <div className="hamburger"></div>
+              <div className="hamburger"></div>
+            </button>
+            {accountMenuOpen && (
+              <div className="dropdown account-dropdown">
+                <a href="/profile" className="dropdown-item">
+                  Profile
+                </a>
+                <a href="/orders" className="dropdown-item">
+                  Orders
+                </a>
+                <a href="/settings" className="dropdown-item">
+                  Settings
+                </a>
+                <a href="/logout" className="dropdown-item">
+                  Logout
+                </a>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </nav>
